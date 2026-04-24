@@ -238,7 +238,7 @@ export default function Hero() {
           <div className="flex gap-4">
             {[
               { label: "Uptime Maintained", value: "99.9%" },
-              { label: "Tickets Resolved", value: "500+" },
+              { label: "Tickets Resolved", value: "2K+" },
             ].map((stat) => (
               <div
                 key={stat.label}
