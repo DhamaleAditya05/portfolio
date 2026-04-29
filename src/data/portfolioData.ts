@@ -207,7 +207,7 @@ export const techStack: { name: string; icon: string }[] = [
   { name: "Git", icon: "🔀" },
   { name: "GitHub", icon: "🐙" },
   { name: "AWS", icon: "☁️" },
-  { name: "Veeam Backup", icon: "💾" },
+  { name: "Veeam", icon: "💾" },
   { name: "SQL Server", icon: "🗄️" },
   { name: "Proxmox", icon: "🖥️" },
   { name: "Citrix", icon: "🌐" },
