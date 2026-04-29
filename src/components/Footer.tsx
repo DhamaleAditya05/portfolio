@@ -11,7 +11,7 @@ const navLinks = [
   { id: "contact", label: "Contact" },
 ];
 
-const techStack = ["Windows Server", "PowerShell", "Active Directory", "Docker", "Jenkins", "AWS", "Veeam", "Git"];
+export const techStack = ["Windows Server", "PowerShell", "Active Directory", "Docker", "Jenkins", "AWS", "Veeam", "Git"];
 
 export default function Footer() {
   const scrollTo = (id: string) => {

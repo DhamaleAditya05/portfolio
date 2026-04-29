@@ -83,16 +83,21 @@ export default function Skills() {
             <SkillCard key={cat.category} {...cat} />
           ))}
         </div>
+          
+        <p className="text-sm text-gray-400 mb-2 md:hidden">
+          Swipe to explore →
+        </p>
 
         {/* Tech Stack Carousel */}
         <div className="text-center mb-6">
           <p className="text-slate-500 text-sm font-mono uppercase tracking-widest">Tech Stack & Tools</p>
         </div>
-        <div className="relative overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#0a0f1e] to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#0a0f1e] to-transparent z-10" />
-          <div className="flex gap-4 animate-scroll-x">
-            {[...techStack, ...techStack].map((tech, idx) => (
+        <div className="relative overflow-x-auto overflow-y-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#0a0f1e] to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#0a0f1e] to-transparent z-10 pointer-events-none" />
+          <div className="relative overflow-hidden"></div>
+          <div className="flex gap-4 w-max overflow-x-auto scroll-container no-scrollbar">
+            {techStack.map((tech: { name: string; icon: string }, idx: number) => (
               <div
                 key={idx}
                 className="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300 cursor-default"
@@ -111,7 +116,7 @@ export default function Skills() {
           to { transform: translateX(-50%); }
         }
         .animate-scroll-x {
-          animation: scroll-x 30s linear infinite;
+          animation: scroll-x 12s linear infinite;
         }
         .animate-scroll-x:hover {
           animation-play-state: paused;
@@ -123,6 +128,28 @@ export default function Skills() {
         .animate-shimmer {
           animation: shimmer 2s infinite;
         }
+        .animate-scroll-x:active {
+          animation-play-state: paused;
+        }
+        .scroll-container {
+          -webkit-overflow-scrolling: touch;
+
+          /* hide scrollbar everywhere */
+          scrollbar-width: none;        /* Firefox */
+          -ms-overflow-style: none;     /* IE/Edge */
+        }
+
+        .scroll-container::-webkit-scrollbar {
+          display: none;                /* Chrome/Safari */
+        }
+        .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+            
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
       `}</style>
     </section>
   );

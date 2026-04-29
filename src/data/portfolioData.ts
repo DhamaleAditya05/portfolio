@@ -198,7 +198,7 @@ export const education = {
   location: "Navi-Mumbai, Maharashtra",
 };
 
-export const techStack = [
+export const techStack: { name: string; icon: string }[] = [
   { name: "Windows Server", icon: "🪟" },
   { name: "Linux", icon: "🐧" },
   { name: "PowerShell", icon: "⚡" },

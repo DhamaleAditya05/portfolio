@@ -45,8 +45,8 @@ const highlights = [
 ];
 
 const stats = [
-  { value: "2", label: "Year Experience", suffix: "" },
-  { value: "2K", label: "Tickets Resolved", suffix: "+" },
+  { value: "1.8", label: "Years of Experience", suffix: "" },
+  { value: "5K", label: "Tickets Resolved", suffix: "+" },
   { value: "99.9", label: "Uptime Maintained", suffix: "%" },
   { value: "20", label: "Automation Impact", suffix: "%" },
 ];
@@ -191,7 +191,7 @@ export default function About() {
                   { label: "Email", value: "adi.dhamale05@email.com", icon: "📧" },
                   { label: "Phone", value: "+91 797-714-6506", icon: "📱" },
                   { label: "Degree", value: "B.E. Electronics & Telecomm.", icon: "🎓" },
-                  { label: "Experience", value: "2 Year (SysAdmin)", icon: "💼" },
+                  { label: "Experience", value: "1.8 Year (SysAdmin)", icon: "💼" },
                 ].map((item) => (
                   <div
                     key={item.label}

@@ -156,6 +156,9 @@ export default function Contact() {
                   <MessageSquare size={18} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white font-space">Send a Message</h3>
+                <p className="text-sm text-yellow-400">
+                  Kindly do not send messages — this form is currently not functional.
+                </p>
               </div>
 
               {submitted ? (

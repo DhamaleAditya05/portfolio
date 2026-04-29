@@ -4,9 +4,9 @@ import { ChevronDown, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import { personalInfo } from "../data/portfolioData";
 
 const roles = [
-  "Cloud & Linux Engineer",
-  "Infrastructure & Automation Specialist",
   "Production System Engineer",
+  "Infrastructure & Automation Specialist",
+  "Cloud & Linux Engineer",
   "DevOps Engineer",
 ];
 
@@ -226,7 +226,7 @@ export default function Hero() {
             {/* Floating badge */}
             <div className="absolute -bottom-4 -right-4 bg-[#0a1628] border border-cyan-500/30 rounded-xl px-4 py-2.5 shadow-xl">
               <div className="text-xs text-gray-400 font-medium">Experience</div>
-              <div className="text-lg font-bold text-cyan-400">2 Year</div>
+              <div className="text-lg font-bold text-cyan-400">1.8 Year</div>
             </div>
             <div className="absolute -top-4 -left-4 bg-[#0a1628] border border-purple-500/30 rounded-xl px-4 py-2.5 shadow-xl">
               <div className="text-xs text-gray-400 font-medium">Projects</div>
@@ -238,7 +238,7 @@ export default function Hero() {
           <div className="flex gap-4">
             {[
               { label: "Uptime Maintained", value: "99.9%" },
-              { label: "Tickets Resolved", value: "2K+" },
+              { label: "Tickets Resolved", value: "5K+" },
             ].map((stat) => (
               <div
                 key={stat.label}
