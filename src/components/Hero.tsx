@@ -217,9 +217,9 @@ export default function Hero() {
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 blur-sm opacity-70 animate-pulse" />
             <div className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-cyan-500/30">
               <img
-                src="/profile.jpg"
+                src="/profile-new.jpg"
                 alt="Aditya Dhamale"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-105 hover:scale-110 transition duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050B18]/40 to-transparent" />
             </div>
